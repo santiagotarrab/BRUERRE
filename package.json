@@ -1,8 +1,10 @@
 {
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   },
+  
+  
   "name": "web4",
   "version": "1.0.0",
   "main": "index.js",
@@ -79,6 +81,7 @@
     "escalade": "^3.1.1",
     "escape-goat": "^2.1.1",
     "escape-string-regexp": "^1.0.5",
+    "express": "*",
     "extend": "^3.0.2",
     "extsprintf": "^1.3.0",
     "fast-deep-equal": "^3.1.3",
@@ -294,8 +297,12 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+
   },
+  
+
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/santiagotarrab/WEB.git"

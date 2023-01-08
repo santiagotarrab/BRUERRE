@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Paginas Web a Medida</title>
+    <title>BRUERREEME</title>
     <meta
       name="description"
       content="páginas web a medida para emprendimientos, emprendedores, micropymes y pymes"
@@ -19,12 +19,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -42,11 +37,11 @@
   <body>
     <div id="main_page">
       <header>
-        <nav class="navbar navbar-expand-md bg-black">
+        <nav class="navbar navbar-expand-md bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <div class="logo">
-                <img src="./img/OBOX2.jpeg" alt="" />
+                <img src="./img/logo.png" alt="" />
               </div>
             </a>
             <button
@@ -58,38 +53,47 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30px"
+                height="30px"
+                fill="black"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
               </svg>
-
-
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav d-flex w-100 justify-content-end">
+              <ul class="navbar-nav d-flex w-100 justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a class="nav-link" aria-current="page" href="#"
                     >INICIO</a
                   >
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
-                    >NOSOTROS</a
+                  <a class="nav-link" aria-current="page" href="#nosotros"> NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#products">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="politica.html"
+                    >POLITICA DE CALIDAD Y AMBIENTAL</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
-                    >SERVICIOS</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
-                    >PROYECTOS</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="#contacto"
                     >CONTACTO</a
                   >
                 </li>
@@ -99,11 +103,10 @@
         </nav>
       </header>
 
-      <!-- 
       <div id="carousel">
         <div
           id="carouselExampleIndicators"
-          class="carousel slide"
+          class="carousel slide carousel-fade"
           data-ride="carousel"
         >
           <ol class="carousel-indicators">
@@ -117,24 +120,25 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
+              <div class="textbanner">
+                <div class="text">
+                  ADITIVOS PARA LUBRICANTES Y PRODUCTOS CONEXOS
+                </div>
+              </div>
               <img
                 class="d-block w-100"
-                src="./img/imagen1.png"
+                src="./img/planta_1.webp"
                 alt="First slide"
               />
             </div>
             <div class="carousel-item">
+              <div class="textbanner">
+                <div class="text">POLITICA DE CALIDAD Y AMBIENTAL</div>
+              </div>
               <img
                 class="d-block w-100"
-                src="./img/imagen2.png"
+                src="./img/planta_2.webp"
                 alt="Second slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="./img/imagen3.png"
-                alt="Third slide"
               />
             </div>
           </div>
@@ -145,7 +149,7 @@
             data-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only"></span>
           </a>
           <a
             class="carousel-control-next"
@@ -154,190 +158,109 @@
             data-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only"></span>
           </a>
         </div>
-      </div> -->
+      </div>
 
-      <div id="main">
-        <div id="space spaceTitle" class=""></div>
-        <div style="height:50px"></div>
-        <div class=" spaceTitle"><h1>RAPIDO, UNICO Y A TU MEDIDA</h1></div>
-        <div style="height:50px"></div>
-        <div class="spaceTitle"><h2>SERVICIO DE DISEÑO WEB</h2></div>
-        <div style="height:50px"></div>
-
-        <a href="#">
-          <div class="link-portfolio">
-            <h3>PORTFOLIO</h3>
+      <div id="numeros">
+        <div class="title">
+          <h2>Estamos orgullosos de nuestros números</h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="number">+40</div>
+            <div class="text">Años de experiencia</div>
           </div>
-        </a>
-
+          <div class="card">
+            <div class="number">50</div>
+            <div class="text">Productos exportados</div>
+          </div>
+          <div class="card">
+            <div class="number">+300</div>
+            <div class="text">Materias primas manejadas</div>
+          </div>
+          <div class="card">
+            <div class="number">22</div>
+            <div class="text">Años con Cert. ISO9001/14001</div>
+          </div>
+        </div>
       </div>
 
       <div id="nosotros">
-        <div>
-          <div class="m-5 bold spaceTitle"><h2>MIRANDO HACIA ADELANTE</h2></div>
-          <div class="p-3">
-            <p class=" ">
-              En un mundo en donde lo digital y las nuevas tecnologías nos
-              desafían constantemente y nos obligan a pensar de manera
-              diferente, queremos ser ese aliado que te ayude a lograrlo,
-              combinando nuestro concocimiento en el diseño web con metodologías
-              de trabajo ágiles, simples y disruptivas
-            </p>
+        <div class="texts">
+          <div class="title">NOSOTROS</div>
+          <div class="text">
+            Aditivos para Lubricantes y Productos Conexos.
+            <br />
+            <br />
+            BRUERREEME es un emprendimiento industrial y comercial que opera
+            desde 1978. Desarrolla y fabrica aditivos que mejoran la performance
+            de lubricantes que son empleados en plantas industriales diversas.
+            Nuestros productos de marca RM expresan el desarrollo y fabricación
+            que el mercado exige bajo un sistema integrado de gestión,
+            certificado bajo Normas ISO 9001 y 14001.
+            <br />
+            <br />
+            Completando nuestra línea, hemos sido designados por Afton Chemical
+            Corporation como representante de ventas y distribucion para la
+            República Argentina y Republica de Chile de sus aditivos para
+            lubricantes y especialidades.
           </div>
         </div>
+        <div class="map"></div>
       </div>
 
-      <div id="space" style="height: 100px"></div>
-
-      <div id="servicios">
-        <div class="servicios-title bold spaceTitle pb-5"><h2>SERVICIOS</h2></div>
-        <div class="servicios-container">
-          <div>
-            <div class=" mt-5  mb-5 servicios-img">
-              <img src="./img/Diseño web.png" alt="">  
-              </div>
-
-
-            <div class="bold"><h3>DISEÑO WEB</h3></div>
-            <div class="mt-5">
-              <h5 class="servicios-text">
-                Te brindamos una solución superadora y de alto impacto para tu
-                web
-              </h5>
+      <div id="products">
+        <div class="title">PRODUCTOS</div>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <img src="./img/icon_fabrica.webp" alt="" />
             </div>
+            <div class="title">PRODUCTOS DE NUESTRA FABRICACIÓN</div>
+            <div class="link"><a href="productsRM.html">LÍNEA RM</a></div>
           </div>
-
-          <div class="light2">
-            <div class=" mt-5  mb-5 servicios-img">
-            <img src="./img/Diagnostico web.png" alt="">  
+          <div class="card">
+            <div class="icon">
+              <img src="./img/icon_other.webp" alt="" />
             </div>
-
-
-            <div class="bold"><h3>DIAGNOSTICO WEB</h3></div>
-            <div class="mt-5">
-              <h5>
-                Te damos información valiosa y útil para ayudarte en la toma de
-                decisiones
-              </h5>
-            </div>
-          </div>
-          <div>
-            <div class=" mt-5 mb-5 servicios-img">
-              <img src="./img/Conocimiento web.png" alt="">  
-              </div>
-            <div class="bold"><h3>CONOCIMIENTO WEB</h3></div>
-            <div class="mt-5 bold">
-              <h5>
-                Te compartimos conocimientos para el correcto mantenimiento y
-                funcionamiento de tu web
-              </h5>
+            <div class="title">OTROS PRODUCTOS COMERCIALIZADOS</div>
+            <div class="link">
+              <a href="productsOP.html">OTROS PRODUCTOS</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="comoTrabajamos">
-        <div id="space" style="height: 100px"></div>
-        <div class="comoTrabajamos-title spaceTitle">
-          <h2>COMO TRABAJAMOS?</h2>
-        </div>
-
-        <div class="comoTrabajamos-container mt-5">
-
-          <div class="item">
-            <div class="PDT-img">
-              <img src="/img/PDT - 1.png" alt="" />
-            </div>
-            <div class="text-abs-left">
-              Analizamos y entendemos tus necesidades </div>
-          </div>
-
-          <div>
-            <div><img src="/img/lineas.png" alt="" /></div>
-          </div>
-
-          <div class="item">
-            <div class="PDT-img">
-              <img src="/img/PDT - 2.png" alt="" />
-            </div>
-            <div class="text-abs-left">Te presentamos el plan de trabajo</div>
-          </div>
-
-          <div><img src="/img/lineas.png" alt="" /></div>
-          
-          <div class="item">
-            <div class="PDT-img">
-              <img src="/img/PDT - 3.png" alt="" />
-            </div>
-            <div class="text-abs-left">Armamos y validamos juntos tu web</div>
-          </div>
-
-
-          <div><img src="/img/lineas.png" alt="" /></div>
-          
-          <div class="item">
-            <div class="PDT-img fondo-celeste">
-              <img src="/img/PDT - 4.png" alt="" />
-            </div>
-            <div class="text-abs-right celeste">Tu web esta lista!</div>
-          </div>
-
-          <div><img src="/img/lineas.png" alt="" /></div>
-          
-         
-          <div class="item">
-            <div class="PDT-img">
-              <img src="/img/PDT - 5.png" alt="" />
-            </div>
-            <div class="text-abs-right">Acompañamiento final</div>
-          </div>
-
-      <div id="space" style="height: 100px"></div>
-
-      <div id="proyectos">
-        <h2>PROYECTOS</h2>
-        <div class="proyectos-container">
-          <div>
-            <div class="image"></div>
-            <div class="title">PROYECTO1</div>
-            <a href="#"><div class="buttom">LINK1</div></a>
-          </div>
-          <div>
-            <div class="image"></div>
-            <div class="title">PROYECTO1</div>
-            <a href="#"><div class="buttom">LINK1</div></a>
-          </div>
-          <div>
-            <div class="image"></div>
-            <div class="title">PROYECTO1</div>
-            <a href="#"><div class="buttom">LINK1</div></a>
-          </div>
-          <div>
-            <div class="image"></div>
-            <div class="title">PROYECTO1</div>
-            <a href="#"><div class="buttom">LINK1</div></a>
-          </div>
-          <div>
-            <div class="image"></div>
-            <div class="title">PROYECTO1</div>
-            <a href="#"><div class="buttom">LINK1</div></a>
-          </div>
-        </div>
+      <div id="politica">
+        <div class="text">POLITICA DE CALIDAD Y AMBIENTAL</div>
+        <div class="button"> <a href="politica.html"> INFORMACION</a></div>
       </div>
 
+      <div id="contacto">
+        <div class="text">CONTACTO</div>
+        <div class="info">
+          <div>
+            Oficinas:<br />
+            Castro 904 CABA Argentina.<br />
+            (C1217AAJ)
+          </div>
+          <div>Telefonos:<br>
+            +5411 4957-5751/3405</div>
+        </div>
+      </div>
 
       <footer>
         <div class="footer-container">
-          <div class="footer-item"></div>
-          <div class="footer-item"></div>
+          <div class="footer-item">
+            <a href="mailto:obox.solutionsarg@gmail.com"
+              >obox.solutionsarg@gmail.com</a
+            >
+          </div>
         </div>
       </footer>
     </div>
-
-
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

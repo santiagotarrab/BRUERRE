@@ -70,6 +70,10 @@ MEDIA + TRANSITIONS
 GENERALES
 ---------------------------
 */
+#main_page {
+  display: block;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -93,7 +97,7 @@ body .bold h3 {
 
 @media (max-width: 950px) {
   .spaceTitle {
-    letter-spacing: 2px;
+    letter-spacing: 10px;
   }
 }
 
@@ -111,6 +115,15 @@ body .bold h3 {
 
 #whatsapp:hover {
   color: #e11060;
+}
+
+header ul li {
+  padding: 0px 8px;
+  color: black;
+}
+
+header ul li a {
+  color: darkred !important;
 }
 
 header div.logo {
@@ -144,7 +157,6 @@ PRINCIPAL + CARROUSEL
   height: auto;
   background-color: black;
   color: white;
-  padding: 10px 100px;
   text-align: justify;
 }
 
@@ -179,6 +191,7 @@ PRINCIPAL + CARROUSEL
 
 #main a {
   text-decoration: none;
+  color: darkred;
 }
 
 #main a div.link-portfolio {
@@ -199,117 +212,20 @@ PRINCIPAL + CARROUSEL
   height: 100%;
 }
 
-#carousel div {
+#carousel {
   width: 100%;
-  height: 600px;
-}
-
-#servicios h5 {
-  padding: 0px 10%;
-}
-
-@media (max-width: 950px) {
-  #servicios h5 {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
-#servicios .servicios-title {
-  margin-bottom: 50px;
-  text-align: center;
-  justify-items: center;
-  justify-items: center;
-  font-weight: 900;
-}
-
-#servicios div.servicios-container {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-#servicios div.servicios-container .light2 {
-  background-color: white !important;
+#carousel .carousel-inner {
+  max-height: 500px;
 }
 
-#servicios div.servicios-container > div {
-  background-color: rgba(128, 128, 128, 0.397);
-  height: auto;
-  width: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#servicios div.servicios-container > div div.servicios-img {
-  width: 100px;
-  height: 100px;
-}
-
-#servicios div.servicios-container > div div.servicios-img > img {
+#carousel .textbanner {
+  width: 100%;
   height: 100%;
-  width: 100%;
-}
-
-@media (max-width: 950px) {
-  #servicios div.servicios-container > div {
-    width: 100%;
-    padding: 0 10%;
-  }
-}
-
-#comoTrabajamos .comoTrabajamos-title {
-  width: 100%;
-  text-align: center;
-  justify-items: center;
-  justify-items: center;
-  font-weight: 900;
-  color: white;
-  background-color: black;
-  padding: 50px 0px;
-}
-
-#comoTrabajamos .comoTrabajamos-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
-}
-
-#comoTrabajamos .comoTrabajamos-container > div.item {
-  width: 100%;
+  z-index: 10;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,68 +233,65 @@ PRINCIPAL + CARROUSEL
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100px;
 }
 
-#comoTrabajamos .comoTrabajamos-container > div.item > div.PDT-img {
-  padding: 20px;
-  background-color: gray;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-#comoTrabajamos .comoTrabajamos-container > div.item > div.PDT-img img {
-  width: 100%;
-  height: 100%;
-}
-
-#comoTrabajamos .comoTrabajamos-container > div.item > div.PDT-img.fondo-celeste {
-  background-color: #00c2cb !important;
-}
-
-#comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-left {
-  text-align: right;
-  position: absolute;
-  right: 60%;
-}
-
-@media (max-width: 950px) {
-  #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-left {
-    right: 70%;
-  }
-}
-
-#comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right {
-  text-align: left;
-  position: absolute;
-  left: 60%;
-}
-
-@media (max-width: 950px) {
-  #comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right {
-    left: 70%;
-  }
-}
-
-#comoTrabajamos .comoTrabajamos-container > div.item > div.text-abs-right.celeste {
-  font-weight: bold;
-  color: #00c2cb;
-}
-
-#proyectos {
-  display: none;
+#carousel .textbanner .text {
+  top: 50px;
+  font-size: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: darkred;
+  width: 50%;
+  height: 200px;
+  background-color: rgba(167, 162, 162, 0.778);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
-#proyectos > div.proyectos-container {
+@media (min-width: 950px) {
+  #carousel .textbanner .text {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  #carousel .textbanner .text {
+    font-size: 130%;
+  }
+}
+
+#numeros {
+  margin-top: 60px;
+}
+
+#numeros .title {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkred;
+}
+
+#numeros .cards {
   margin-top: 50px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,60 +301,83 @@ PRINCIPAL + CARROUSEL
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: darkred;
+  height: 180px;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
 }
 
-#proyectos > div.proyectos-container > div {
-  height: auto;
-  width: auto;
-  min-width: 200px;
+#numeros .cards .card {
+  border: 0px;
+  border-bottom: 10px grey solid;
+  width: 15%;
+}
+
+#numeros .cards .card .number {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 300%;
+}
+
+@media (max-width: 800px) {
+  #numeros .cards .card .number {
+    font-size: 130%;
+  }
+}
+
+#numeros .cards .card .text {
+  text-align: center;
+  color: #999997;
+}
+
+#nosotros {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
 
-#proyectos > div.proyectos-container > div > div.image {
-  width: 100px;
-  height: 100px;
-  background-image: url("../img/proyecto1.jpg");
+#nosotros .texts {
+  background-color: darkred;
+  padding: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nosotros .texts .title {
+  font-size: 200%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nosotros .texts .text {
+  width: 100%;
+}
+
+#nosotros .map {
+  height: auto;
+  width: 100%;
+  background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
 }
 
-#proyectos > div.proyectos-container > div > a {
-  text-decoration: none;
-}
-
-#proyectos > div.proyectos-container > div > a div.buttom {
-  color: white;
+#products .title {
+  font-size: xx-large;
+  margin: 40px;
   text-align: center;
-  background-color: green;
-  width: 100px;
-  border-radius: 12px;
 }
 
-#proyectos > div.proyectos-container > div > a div.buttom:hover {
-  color: black;
-  background-color: white;
-  border: solid black;
-}
-
-#contacto > div.contacto-container {
-  margin-top: 50px;
-  width: 100%;
-  height: width;
+#products .cards {
+  font-size: medium;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,18 +385,180 @@ PRINCIPAL + CARROUSEL
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#contacto > div.contacto-container > div {
-  width: 33.33%;
-  background-color: rgba(128, 128, 128, 0.397);
+#products .cards .card {
+  border: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
 }
 
-#contacto > div.contacto-container > div img {
-  max-width: 100%;
-  max-height: 100%;
+#products .cards .card .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#products .cards .card .icon img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#products .cards .card .title {
+  font-size: medium;
+  background-color: darkred;
+  color: white;
+}
+
+#products .cards .card .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 30%;
+  background-color: white;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 3px;
+  border-radius: 20px;
+  text-justify: center;
+}
+
+#products .cards .card .link a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#products .cards .card .link:hover {
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+  background-color: black;
+}
+
+#products .cards .card .link:hover a {
+  color: white;
+}
+
+#politica {
+  padding: 50px 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: darkred;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#politica .text {
+  text-align: center;
+  width: 100%;
+  font-size: 200%;
+}
+
+#politica .button {
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: solid 10px white;
+  border-radius: 50px;
+  width: 200px;
+}
+
+#politica .button a {
+  text-decoration: none;
+  color: black;
+}
+
+#contacto {
+  padding: 50px 0;
+}
+
+#contacto .text {
+  text-align: center;
+  width: 100%;
+  font-size: 200%;
+}
+
+#contacto .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contacto .info div {
+  text-align: center;
+  width: 50%;
+}
+
+#politicaPage .text {
+  padding: 50px;
+}
+
+#politicaPage .text p,
+#politicaPage .text ul {
+  font-size: 120%;
+}
+
+#productsRMPage .text {
+  padding: 50px;
+}
+
+#productsRMPage .text p,
+#productsRMPage .text ul {
+  font-size: 120%;
+}
+
+#productsRMPage .text h1,
+#productsRMPage .text h2,
+#productsRMPage .text h3,
+#productsRMPage .text h4 {
+  color: darkred;
+}
+
+#productsRMPage .text li {
+  font-weight: 900;
+}
+
+#productsOPPage .text {
+  padding: 50px;
+}
+
+#productsOPPage .text p,
+#productsOPPage .text ul {
+  font-size: 100%;
+}
+
+#productsOPPage .text h1,
+#productsOPPage .text h2,
+#productsOPPage .text h3,
+#productsOPPage .text h4 {
+  color: darkred;
+  font-size: 100%;
+}
+
+#productsOPPage .text li {
+  font-weight: 900;
 }
 
 /*--------------------------
@@ -474,8 +572,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -485,12 +583,10 @@ footer {
   overflow: hidden;
   height: 50px;
   width: 100%;
-  padding: 50px;
 }
 
 footer div.footer-item {
+  color: white;
   height: 100px;
-  width: 100px;
-  background-color: #14a529;
 }
 /*# sourceMappingURL=main.css.map */
