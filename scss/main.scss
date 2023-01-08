@@ -610,7 +610,9 @@ $carousel-control-hover-opacity: 0.9;
 FOOTER
 ---------------------------*/
 footer {
+  text-align: left;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: end;
@@ -621,7 +623,13 @@ footer {
   height: 50px;
   width: 100%;
 
+  .footer-container{
+    width: 100%;
+  }
+
   div.footer-item {
+    display: flex;
+    justify-content: space-around;
     color: white;
     height: 100px;
   }

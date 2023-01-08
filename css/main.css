@@ -565,9 +565,12 @@ PRINCIPAL + CARROUSEL
 FOOTER
 ---------------------------*/
 footer {
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -585,7 +588,16 @@ footer {
   width: 100%;
 }
 
+footer .footer-container {
+  width: 100%;
+}
+
 footer div.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: white;
   height: 100px;
 }
