@@ -127,8 +127,8 @@ header ul li a {
 }
 
 header div.logo {
-  width: 200px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 header div.logo img {
@@ -246,6 +246,10 @@ PRINCIPAL + CARROUSEL
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: darkred;
   width: 50%;
   height: 200px;
@@ -260,6 +264,7 @@ PRINCIPAL + CARROUSEL
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 @media (min-width: 950px) {
@@ -273,6 +278,26 @@ PRINCIPAL + CARROUSEL
   #carousel .textbanner .text {
     font-size: 130%;
   }
+}
+
+#carousel .textbanner .text .link {
+  font-size: 50%;
+  border: solid black;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+#carousel .textbanner .text .link a {
+  text-decoration: none;
+  color: black;
+}
+
+#carousel .textbanner .text .link a:hover {
+  color: white;
+}
+
+#carousel .textbanner .text .link:hover {
+  background-color: rgba(0, 0, 0, 0.578);
 }
 
 #numeros {
@@ -340,6 +365,8 @@ PRINCIPAL + CARROUSEL
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -362,12 +389,24 @@ PRINCIPAL + CARROUSEL
   width: 100%;
 }
 
+@media (min-width: 800px) {
+  #nosotros .texts {
+    width: 50%;
+  }
+}
+
 #nosotros .map {
-  height: auto;
+  min-height: 300px;
   width: 100%;
   background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 800px) {
+  #nosotros .map {
+    width: 50%;
+  }
 }
 
 #products .title {

@@ -71,8 +71,8 @@ header {
   }
 
   div.logo {
-    width: 200px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     img {
       max-width: 100%;
       max-height: 100%;
@@ -147,10 +147,9 @@ $carousel-control-hover-opacity: 0.9;
   width: 100%;
   height: auto;
 
-  .carousel-inner{
+  .carousel-inner {
     max-height: 500px;
   }
-
 
   .textbanner {
     width: 100%;
@@ -166,6 +165,7 @@ $carousel-control-hover-opacity: 0.9;
       top: 50px;
       font-size: 200%;
       display: flex;
+      flex-direction: column;
       color: $color_1;
       width: 50%;
       height: 200px;
@@ -175,6 +175,7 @@ $carousel-control-hover-opacity: 0.9;
       align-self: center;
       align-items: center;
       text-align: center;
+      padding: 20px;
 
       @media (min-width: 950px) {
         position: absolute;
@@ -183,6 +184,20 @@ $carousel-control-hover-opacity: 0.9;
 
       @media (max-width: 600px) {
         font-size: 130%;
+      }
+      .link {
+        font-size: 50%;
+        border: solid black;
+        border-radius: 10px;
+        padding: 0px 10px;
+        
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover{color: white;}
+        }
+        &:hover{background-color: rgba(0, 0, 0, 0.578);}
+        
       }
     }
   }
@@ -229,13 +244,14 @@ $carousel-control-hover-opacity: 0.9;
   margin-top: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   .texts {
+
     background-color: $color_1;
     padding: 5%;
     width: 100%;
     display: flex;
-
 
     .title {
       font-size: 200%;
@@ -245,14 +261,19 @@ $carousel-control-hover-opacity: 0.9;
     .text {
       width: 100%;
     }
+    @media (min-width: 800px) {
+      width: 50%;
+    }
   }
   .map {
-    height: auto;
+    min-height: 300px;
     width: 100%;
     background-image: url("../img/map.webp");
     background-repeat: no-repeat;
     background-size: cover;
-
+    @media (min-width: 800px) {
+      width: 50%;
+    }
   }
 }
 
@@ -333,9 +354,9 @@ $carousel-control-hover-opacity: 0.9;
     border: solid 10px white;
     border-radius: 50px;
     width: 200px;
-    a{
-    text-decoration: none;
-    color: black;
+    a {
+      text-decoration: none;
+      color: black;
     }
   }
 }
@@ -623,7 +644,7 @@ footer {
   height: 50px;
   width: 100%;
 
-  .footer-container{
+  .footer-container {
     width: 100%;
   }
 
