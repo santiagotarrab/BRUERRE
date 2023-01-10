@@ -396,8 +396,8 @@ PRINCIPAL + CARROUSEL
 }
 
 #nosotros .map {
-  min-height: 300px;
   width: 100%;
+  aspect-ratio: 3 / 2;
   background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,6 +406,7 @@ PRINCIPAL + CARROUSEL
 @media (min-width: 800px) {
   #nosotros .map {
     width: 50%;
+    aspect-ratio: 3 / 1;
   }
 }
 

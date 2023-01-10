@@ -266,13 +266,15 @@ $carousel-control-hover-opacity: 0.9;
     }
   }
   .map {
-    min-height: 300px;
     width: 100%;
+    
+    aspect-ratio: 3 / 2;
     background-image: url("../img/map.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     @media (min-width: 800px) {
       width: 50%;
+      aspect-ratio: 3 / 1;
     }
   }
 }
