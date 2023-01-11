@@ -247,8 +247,7 @@ $carousel-control-hover-opacity: 0.9;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0px;
-  margin:0px;
+  
   max-width: 100%;
 
 
@@ -274,11 +273,13 @@ $carousel-control-hover-opacity: 0.9;
   }
   .map {
     max-width: 100%;
+    min-height: 300px;
     width: 100%;
     background-image: url("../img/map.webp");
     background-repeat: no-repeat;
     background-size:cover;
-    
+    min-height: 300px;
+    aspect-ratio: 3 / 2;
     @media (min-width: 800px) {
       width: 50%;
       aspect-ratio: 3 / 1;
@@ -307,13 +308,17 @@ $carousel-control-hover-opacity: 0.9;
         justify-content: center;
         img {
           max-width: 100px;
-          max-height: 100px;
+          height: 100px;
         }
       }
       .title {
+        display: flex;
+        height: 80px;
         font-size: medium;
         background-color: $color_1;
         color: white;
+        justify-content: center;
+        align-items: center;
       }
       .link {
         display: flex;

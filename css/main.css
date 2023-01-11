@@ -368,8 +368,6 @@ PRINCIPAL + CARROUSEL
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding: 0px;
-  margin: 0px;
   max-width: 100%;
 }
 
@@ -401,10 +399,13 @@ PRINCIPAL + CARROUSEL
 
 #nosotros .map {
   max-width: 100%;
+  min-height: 300px;
   width: 100%;
   background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 300px;
+  aspect-ratio: 3 / 2;
 }
 
 @media (min-width: 800px) {
@@ -454,13 +455,23 @@ PRINCIPAL + CARROUSEL
 
 #products .cards .card .icon img {
   max-width: 100px;
-  max-height: 100px;
+  height: 100px;
 }
 
 #products .cards .card .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
   font-size: medium;
   background-color: darkred;
   color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #products .cards .card .link {
