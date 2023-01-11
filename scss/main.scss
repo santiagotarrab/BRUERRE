@@ -241,19 +241,26 @@ $carousel-control-hover-opacity: 0.9;
 }
 
 #nosotros {
+
   margin-top: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  .texts {
+  padding: 0px;
+  margin:0px;
+  max-width: 100%;
 
+
+  .texts {
+    max-width: 100%;
     background-color: $color_1;
     padding: 5%;
     width: 100%;
     display: flex;
-
+    
     .title {
+      
       font-size: 200%;
       margin: 0px;
       padding: 0px;
@@ -266,12 +273,12 @@ $carousel-control-hover-opacity: 0.9;
     }
   }
   .map {
+    max-width: 100%;
     width: 100%;
-    
-    aspect-ratio: 3 / 2;
     background-image: url("../img/map.webp");
     background-repeat: no-repeat;
     background-size:cover;
+    
     @media (min-width: 800px) {
       width: 50%;
       aspect-ratio: 3 / 1;

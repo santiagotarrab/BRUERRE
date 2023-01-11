@@ -368,9 +368,13 @@ PRINCIPAL + CARROUSEL
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
 }
 
 #nosotros .texts {
+  max-width: 100%;
   background-color: darkred;
   padding: 5%;
   width: 100%;
@@ -396,8 +400,8 @@ PRINCIPAL + CARROUSEL
 }
 
 #nosotros .map {
+  max-width: 100%;
   width: 100%;
-  aspect-ratio: 3 / 2;
   background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
