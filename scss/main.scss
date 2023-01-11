@@ -315,6 +315,7 @@ $carousel-control-hover-opacity: 0.9;
         }
       }
       .title {
+        font-size: 120% !important;
         display: flex;
         height: 80px;
         font-size: medium;
@@ -326,7 +327,7 @@ $carousel-control-hover-opacity: 0.9;
       .link {
         height: 50px;
         display: flex;
-        margin: 20px 30%;
+        margin: 20px 10%;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -366,6 +367,7 @@ $carousel-control-hover-opacity: 0.9;
     font-size: 200%;
   }
   .button {
+    margin-top: 20px;
     background-color: white;
     color: black;
     text-align: center;
@@ -420,8 +422,11 @@ $carousel-control-hover-opacity: 0.9;
     h4 {
       color: $color_1;
     }
+    color: grey;
     li {
+      list-style-type:none;
       font-weight: 900;
+      color: black;
     }
   }
 }

@@ -462,6 +462,7 @@ PRINCIPAL + CARROUSEL
 }
 
 #products .cards .card .title {
+  font-size: 120% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +483,7 @@ PRINCIPAL + CARROUSEL
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 30%;
+  margin: 20px 10%;
   background-color: white;
   display: flex;
   -webkit-box-pack: center;
@@ -538,6 +539,7 @@ PRINCIPAL + CARROUSEL
 }
 
 #politica .button {
+  margin-top: 20px;
   background-color: white;
   color: black;
   text-align: center;
@@ -584,6 +586,7 @@ PRINCIPAL + CARROUSEL
 
 #productsRMPage .text {
   padding: 50px;
+  color: grey;
 }
 
 #productsRMPage .text p,
@@ -599,7 +602,9 @@ PRINCIPAL + CARROUSEL
 }
 
 #productsRMPage .text li {
+  list-style-type: none;
   font-weight: 900;
+  color: black;
 }
 
 #productsOPPage .text {
