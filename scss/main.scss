@@ -185,21 +185,28 @@ $carousel-control-hover-opacity: 0.9;
       @media (max-width: 900px) {
         font-size: 130%;
       }
+
+      @media (max-width: 450px) {
+        font-size: 60%;
+      }
+
       .link {
-        
         font-size: 50%;
         border: solid rgba(0, 0, 0, 0.544);
         border-radius: 10px;
         padding: 0px 10px;
         margin: 20px;
-        
+
         a {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.544);
-          &:hover{color: white;}
+          &:hover {
+            color: white;
+          }
         }
-        &:hover{background-color: rgba(0, 0, 0, 0.415);}
-        
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.415);
+        }
       }
     }
   }
@@ -237,21 +244,22 @@ $carousel-control-hover-opacity: 0.9;
       .text {
         text-align: center;
         color: $color_2;
+        @media (max-width: 400px) {
+          font-size: 50%;
+        }
       }
     }
   }
 }
 
 #nosotros {
-
   margin-top: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  
-  max-width: 100%;
 
+  max-width: 100%;
 
   .texts {
     max-width: 100%;
@@ -259,9 +267,8 @@ $carousel-control-hover-opacity: 0.9;
     padding: 5%;
     width: 100%;
     display: flex;
-    
+
     .title {
-      
       font-size: 200%;
       margin: 0px;
       padding: 0px;
@@ -279,7 +286,7 @@ $carousel-control-hover-opacity: 0.9;
     width: 100%;
     background-image: url("../img/map.webp");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     min-height: 300px;
     aspect-ratio: 3 / 2;
     @media (min-width: 800px) {
@@ -292,7 +299,7 @@ $carousel-control-hover-opacity: 0.9;
 #products {
   .title {
     font-size: xx-large;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
     text-align: center;
   }
   .cards {
@@ -323,6 +330,9 @@ $carousel-control-hover-opacity: 0.9;
         color: white;
         justify-content: center;
         align-items: center;
+        @media (max-width: 600px) {
+          font-size: 70% !important;
+        }
       }
       .link {
         height: 50px;
@@ -335,6 +345,9 @@ $carousel-control-hover-opacity: 0.9;
         border-radius: 20px;
         text-justify: center;
         align-items: center;
+        @media (max-width: 600px) {
+          font-size: 70% !important;
+        }
         a {
           text-align: center;
           text-decoration: none;
@@ -424,7 +437,7 @@ $carousel-control-hover-opacity: 0.9;
     }
     color: grey;
     li {
-      list-style-type:none;
+      list-style-type: none;
       font-weight: 900;
       color: black;
     }
