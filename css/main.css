@@ -242,7 +242,7 @@ PRINCIPAL + CARROUSEL
 
 #carousel .textbanner .text {
   top: 50px;
-  font-size: 200%;
+  font-size: 250%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,8 +251,8 @@ PRINCIPAL + CARROUSEL
       -ms-flex-direction: column;
           flex-direction: column;
   color: darkred;
-  width: 50%;
-  height: 200px;
+  width: 70%;
+  height: 50%;
   background-color: rgba(167, 162, 162, 0.778);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -274,7 +274,7 @@ PRINCIPAL + CARROUSEL
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #carousel .textbanner .text {
     font-size: 130%;
   }
@@ -282,14 +282,15 @@ PRINCIPAL + CARROUSEL
 
 #carousel .textbanner .text .link {
   font-size: 50%;
-  border: solid black;
+  border: solid rgba(0, 0, 0, 0.544);
   border-radius: 10px;
   padding: 0px 10px;
+  margin: 20px;
 }
 
 #carousel .textbanner .text .link a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.544);
 }
 
 #carousel .textbanner .text .link a:hover {
@@ -297,7 +298,7 @@ PRINCIPAL + CARROUSEL
 }
 
 #carousel .textbanner .text .link:hover {
-  background-color: rgba(0, 0, 0, 0.578);
+  background-color: rgba(0, 0, 0, 0.415);
 }
 
 #numeros {
@@ -417,7 +418,7 @@ PRINCIPAL + CARROUSEL
 
 #products .title {
   font-size: xx-large;
-  margin: 40px;
+  margin: 20px 0 0 0;
   text-align: center;
 }
 
@@ -430,6 +431,8 @@ PRINCIPAL + CARROUSEL
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -441,7 +444,7 @@ PRINCIPAL + CARROUSEL
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: 30%;
 }
 
 #products .cards .card .icon {
@@ -475,6 +478,7 @@ PRINCIPAL + CARROUSEL
 }
 
 #products .cards .card .link {
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,6 +491,9 @@ PRINCIPAL + CARROUSEL
   border: solid 3px;
   border-radius: 20px;
   text-justify: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #products .cards .card .link a {
