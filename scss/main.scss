@@ -79,6 +79,20 @@ header {
     }
   }
 }
+
+.flag{
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 25px;
+  img{
+    max-width: 100%;
+    max-height: 100%
+  }
+}
+
+
 /*---------------------------
 PRINCIPAL + CARROUSEL
 ---------------------------*/
@@ -142,6 +156,20 @@ $carousel-control-hover-opacity: 0.9;
     }
   }
 }
+
+#carousel2container{
+  display: flex;
+  justify-content: center;
+}
+
+#carousel2{
+  width: 60%;
+
+  .carousel-inner{
+   
+  }
+}
+
 
 #carousel {
   width: 100%;
